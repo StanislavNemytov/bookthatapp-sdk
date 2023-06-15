@@ -54,7 +54,13 @@ export type TBTA = {
         [x: string]: any;
         id: number;
     }) => Promise<any>;
-    createCustomer: (data: TBtaCreateCustomerRequest) => Promise<TBtaCustomer>;
+    createCustomer: (data: TBtaCreateCustomerRequest) => Promise<{
+        customer: TBtaCustomer;
+    }>;
+    deleteCustomer: (data: {
+        [x: string]: any;
+        id: number;
+    }) => Promise<any>;
 };
 export type TBtaCreateCustomerRequest = {
     first_name: string;

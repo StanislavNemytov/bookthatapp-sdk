@@ -51,7 +51,8 @@
  * getLocations: Function
  * getCustomers: (data: { [x: string]: any }) => Promise<any>
  * getCustomer: (data: { id: number, [x: string]: any }) => Promise<any>
- * createCustomer: (data: TBtaCreateCustomerRequest) => Promise<TBtaCustomer>
+ * createCustomer: (data: TBtaCreateCustomerRequest) => Promise<{customer: TBtaCustomer}>
+ * deleteCustomer: (data: { id: number, [x: string]: any }) => Promise<any>
  * }} TBTA
  */
 

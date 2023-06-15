@@ -9,7 +9,7 @@
 
 import axios from 'axios';
 import base64 from 'base-64';
-import {TBTA} from './types';
+import { TBTA } from './types';
 
 /**
  * BookThatApp SDK
@@ -521,6 +521,13 @@ function BookThatApp() {
       url: '/customers',
       method: 'post',
       data,
+    });
+  };
+
+  BTA.deleteCustomer = function (data) {
+    return BTA.makeRequest({
+      url: '/customers/' + data.id,
+      method: 'delete',
     });
   };
 
