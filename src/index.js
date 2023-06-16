@@ -11,6 +11,8 @@ import axios from 'axios';
 import base64 from 'base-64';
 import { TBTA } from './types';
 
+export * from './types';
+
 /**
  * BookThatApp SDK
  * @return {TBTA}
